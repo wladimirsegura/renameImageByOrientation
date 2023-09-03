@@ -1,7 +1,5 @@
 
-const dir = process.argv[2]; // ← 変更してね
-console.log(dir)
-
+const dir = process.argv[2];
 const fs = require("fs");
 const path = require("path");
 const sizeOf = require('image-size')
@@ -29,5 +27,3 @@ targetFileNames.forEach(fileName => {
     console.log(filePath.before + "-->" + filePath.after);
   });
 });
-
-
